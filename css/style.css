@@ -570,6 +570,7 @@ h2 {
 .portfolio-item {
   text-decoration: none;
 }
+
 .portfolio-item-title {
   font-style: normal;
   font-weight: bold;
@@ -620,4 +621,30 @@ h2 {
     0px 1px 1px rgba(0, 0, 0, 0.12);
   transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 2500ms;
+}
+.portfoli-item-text {
+  background: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  line-height: 28px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: normal;
+  align-items: center;
+  display: flex;
+  padding: 63px 24px 63px 24px;
+  box-sizing: border-box;
+  transition: top 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.portfolio-item-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-item:hover .portfoli-item-text {
+  top: 0;
 }
