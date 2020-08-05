@@ -112,7 +112,8 @@ body {
   transition-duration: 250ms;
 }
 .navigation-list-link:hover::after,
-.navigation-list-link:focus::after {
+.navigation-list-link:focus::after,
+.active::after {
   width: 100%;
 }
 
@@ -153,7 +154,8 @@ body {
 .header-email:hover,
 .header-email:focus,
 .header-tel:hover,
-.header-tel:focus {
+.header-tel:focus,
+.active {
   color: var(--blue-color);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -274,6 +276,7 @@ h2 {
   align-items: center;
 }
 .about-us-list-title {
+  margin-top: 30px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -621,9 +624,10 @@ h2 {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
   transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
 }
 .portfoli-item-text {
+  font-size: 18px;
   background: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   line-height: 28px;
